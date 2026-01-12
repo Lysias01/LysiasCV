@@ -1,0 +1,60 @@
+:root {
+  --primary: #FFB800;
+  --secondary: #00E5FF;
+  --text: #FFFFFF;
+  --bg: #0D0D0D;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* 🔥 hauteur réelle du header */
+  --header-height: 72px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text);
+
+  /* ✅ SOLUTION CLÉ */
+  padding-top: var(--header-height);
+
+  background:
+    linear-gradient(rgba(13,13,13,0.9), rgba(13,13,13,0.9)),
+    url("/src/assets/background.svg") center / cover no-repeat;
+
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ✅ toutes les sections respectent le header au scroll */
+section {
+  padding: 90px 20px;
+  scroll-margin-top: var(--header-height);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  margin: 0;
+}
+
+/* =============================
+   SCROLL REVEAL
+============================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
