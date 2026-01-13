@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://Lysias01.github.io/LysiasCV/',
-  base: '/LysiasCV/',  // très important pour GitHub Pages
+  site: 'https://lysias01.github.io',
+  base: '/LysiasCV/',
 });
