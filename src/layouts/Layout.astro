@@ -1,7 +1,6 @@
 ---
 import "../style/main.css";
 import "../style/mains.css";
-import "../scripts/main.js";
 ---
 <!DOCTYPE html>
 <html lang="fr">
@@ -14,6 +13,6 @@ import "../scripts/main.js";
   </head>
   <body>
     <slot /> <!-- Le contenu des pages -->
-    <!--script type="module" src="/src/scripts/main.js" defer></!--script-->
+    <script type="module" src="/public/scripts/main.js" defer></script>
   </body>
 </html>
