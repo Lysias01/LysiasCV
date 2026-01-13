@@ -6,7 +6,7 @@
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
 
-  /* 🔥 hauteur réelle du header */
+  /* hauteur réelle du header */
   --header-height: 72px;
 }
 
@@ -19,12 +19,12 @@ body {
   font-family: var(--font-body);
   color: var(--text);
 
-  /* ✅ SOLUTION CLÉ */
+  /* SOLUTION CLÉ */
   padding-top: var(--header-height);
 
   background:
     linear-gradient(rgba(13,13,13,0.9), rgba(13,13,13,0.9)),
-    url("/src/assets/background.svg") center / cover no-repeat;
+    url("/public/assets/background.svg") center / cover no-repeat;
 
   scroll-behavior: smooth;
 }
@@ -34,7 +34,7 @@ a {
   color: inherit;
 }
 
-/* ✅ toutes les sections respectent le header au scroll */
+/* toutes les sections respectent le header au scroll */
 section {
   padding: 90px 20px;
   scroll-margin-top: var(--header-height);
