@@ -1,9 +1,15 @@
 <section id="Contact" class="contact">
   <h2 class="section-title reveal">Contactez Moi</h2>
 
-  <form id="contact-form" action="https://formspree.io/f/xeeeqawg" method="POST" class="contact-form reveal">
-    <input type="text" name="name" placeholder="Votre Nom et Prenom(s)" required />
-    <input type="email" name="email" placeholder="Votre Email" required />
+  <!-- Formulaire Formspree -->
+  <form 
+    id="contact-form"
+    action="https://formspree.io/f/xeeeqawg" 
+    method="POST"
+    class="contact-form reveal"
+  >
+    <input type="text" name="name" placeholder="Votre Nom et Prenom(s)" required>
+    <input type="email" name="email" placeholder="Votre Email" required>
     <textarea name="message" placeholder="Votre Message" required></textarea>
     <button type="submit" class="btn primary">Envoyer</button>
     <p id="form-response" style="margin-top:12px;color:var(--primary);display:none;">
@@ -11,11 +17,13 @@
     </p>
   </form>
 
+  <!-- Bouton WhatsApp -->
   <p class="whatsapp-text reveal">Ou contactez-moi directement sur WhatsApp :</p>
   <a href="https://wa.me/22661656959?text=Bonjour%20Lysias!" target="_blank" class="btn secondary whatsapp-btn reveal">
-    <img src="/LysiasCV/assets/whatsapp-icon.webp" alt="WhatsApp" style="width:20px; margin-right:8px;" /> WhatsApp
+  <img src={`${import.meta.env.BASE_URL}assets/whatsapp-icon.webp`} alt="WhatsApp" style="width:20px; margin-right:8px;">    WhatsApp
   </a>
 
+  <!-- Infos de contact classiques -->
   <div class="contact-info reveal">
     <p>Email : <a href="mailto:eldadsimpore@gmail.com">eldadsimpore@gmail.com</a></p>
     <p>Téléphone 1: <a href="tel:+22661656959">+226 61656959</a></p>
